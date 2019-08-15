@@ -21,6 +21,8 @@ end
     erb :create_puppy
   end
 
-  post '/puppy' do
-    erb: display_puppy
+  post '/puppy[:id]' do
+
+    erb :display_puppy
+  end
 end
