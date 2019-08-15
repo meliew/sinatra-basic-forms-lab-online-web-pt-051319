@@ -21,8 +21,8 @@ end
     erb :create_puppy
   end
 
-  post '/puppy/:name' do
-    @name = params[:name]
+  post '/puppy/' do
+    @puppy = Puppy.new(params[:name], params[:breed], params[:months_old])
     erb :display_puppy
 
   end
