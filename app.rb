@@ -22,7 +22,8 @@ end
   end
 
   post '/puppy/:name' do
-
+    @name = params[:name]
     erb :display_puppy
+
   end
 end
